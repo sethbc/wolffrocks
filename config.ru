@@ -8,3 +8,4 @@ Sinatra::Application.default_options.merge!(
 
 require 'site.rb'
 run Sinatra.application
+# vim: set ft=ruby :
