@@ -2,27 +2,25 @@
 %html{ "xml:lang" => "en", :xmlns => "http://www.w3.org/1999/xhtml" }
   %head
     %meta{ :content => "text/html; charset=utf-8", "http-equiv" => "content-type" }
-    %link{ :href => "stylesheets/blueprint/screen.css", :rel => "stylesheet", :media => "screen, projection", :type => "text/css" }
-    %link{ :href => "stylesheets/blueprint/print.css", :rel => "stylesheet", :media => "print", :type => "text/css" }
-    /
-      [if IE]>
-      <link rel="stylesheet" href="css/blueprint/ie.css" type="text/css" media="screen, projection">
+    %link{ :href => "stylesheets/screen.css", :rel => "stylesheet", :media => "screen, projection", :type => "text/css" }
+    %link{ :href => "stylesheets/print.css", :rel => "stylesheet", :media => "print", :type => "text/css" }
+    /[if IE]
+      %link{ :href => "stylesheets/ie.css", :rel => "stylesheet", :media => "screen, projection", :type => "text/css" }
+    %link{ :href => "stylesheets/style.css", :rel => "stylesheet", :media => "screen, projection", :type => "text/css" }
     %title
       wolffrocks.com | Jordan Wolff
-    %link{ :href => "stylesheets/blueprint/plugins/fancy-type/screen.css", :rel => "stylesheet", :media => "screen, projection", :type => "text/css" }
   %body
     .container
       #header.span-24
         .span-14
           %img{ :src => "images/wolffrocks.png" }
         .span-10.last
-          %h2.alt.prepend-top{ :style => "text-align:right;" }
+          %h2.fancy.bottom{ :style => "text-align:right;" }
             Jordan Wolff's new album: (Title)
         %hr
-        %hr.space
       .span-3.colborder
         %h3
-          %span.alt
+          %span.fancy
             Navigation
         %p
           %h6
@@ -41,32 +39,32 @@
         = yield
       .span-6.last
         %h3
-          %span.alt
+          %span.fancy
             About
         %img{ :src => "images/jordan-sidebar.jpg" }
         %p
           Jordan is a world traveler, musician and lawyer.
         %h3
-          %span.alt
+          %span.fancy
             Contact
         %p
           To reach Jordan, send him an email at
           %a{ :href => "mailto:jordan@wolffrocks.com" } jordan@wolffrocks.com
         %h3
-          %span.alt
+          %span.fancy
             Links
-        %p
+        %p 
           Jordan on
           %a{ :href => "http://myspace.com/getyourhandsup" } myspace
-        %p{ :style => "text-indent:0;" }
+          %br
           Jordan on 
           %a{ :href => "http://www.facebook.com/people/Jordan-Wolff/2711007" } Facebook
-        %p{ :style => "text-indent:0;" }
+          %br
           Tripp on
           %a{ :href => "http://myspace.com/trippband" } myspace
-    %hr.space
-    #footer.span-24.center
-      %p{ :style => "text-align:center;" }
-        © 2009
-        %a{ :href => "http://sethbc.org" } Seth Chandler
-        \and Jordan Wolff.
+      %hr.space
+      #footer.span-24
+        %p.center
+          © 2009
+          %a{ :href => "http://sethbc.org" } Seth Chandler
+          \and Jordan Wolff.
