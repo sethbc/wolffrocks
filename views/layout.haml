@@ -7,7 +7,6 @@
     /
       [if IE]>
       <link rel="stylesheet" href="css/blueprint/ie.css" type="text/css" media="screen, projection">
-      <![endif]
     %title
       wolffrocks.com | Jordan Wolff
     %link{ :href => "stylesheets/blueprint/plugins/fancy-type/screen.css", :rel => "stylesheet", :media => "screen, projection", :type => "text/css" }
@@ -21,14 +20,7 @@
             Jordan Wolff's new album: (Title)
         %hr
         %hr.space
-      = yield
-      .span-7.last
-        %h3
-          %span.alt
-            About
-        %img{ :src => "images/jordan-sidebar.jpg" }
-        %p
-          Jordan is a world traveler, musician and lawyer.
+      .span-3.colborder
         %h3
           %span.alt
             Navigation
@@ -42,7 +34,18 @@
           %h6
             %a{ :href => "/photos" }
               Photos
-        %hr.space
+          %h6
+            %a{ :href => "/downloads" }
+              Downloads
+      .span-13.colborder
+        = yield
+      .span-6.last
+        %h3
+          %span.alt
+            About
+        %img{ :src => "images/jordan-sidebar.jpg" }
+        %p
+          Jordan is a world traveler, musician and lawyer.
         %h3
           %span.alt
             Contact
