@@ -14,11 +14,11 @@
   %body
     .container
       #header.span-24
-        %h1
-          wolffrocks
-        %hr
-        %h2.alt
-          Jordan Wolff's new album: (Title)
+        .span-14
+          %img{ :src => "images/wolffrocks.png" }
+        .span-10.last
+          %h2.alt.prepend-top{ :style => "text-align:right;" }
+            Jordan Wolff's new album: (Title)
         %hr
         %hr.space
       = yield
