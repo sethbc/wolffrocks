@@ -15,10 +15,10 @@
     .container
       #header.span-24
         %h1
-          Jordan Wolff
+          wolffrocks
         %hr
         %h2.alt
-          Jordan has just released his new album!
+          Jordan Wolff's new album: (Title)
         %hr
         %hr.space
       = yield
@@ -31,23 +31,34 @@
           Jordan is a world traveler, musician and lawyer.
         %h3
           %span.alt
+            Navigation
+        %p
+          %h6
+            %a{ :href => "/" }
+              Home
+          %h6
+            %a{ :href => "/bio" }
+              Jordan's Bio
+          %h6
+            %a{ :href => "/photos" }
+              Photos
+        %hr.space
+        %h3
+          %span.alt
             Contact
         %p
           To reach Jordan, send him an email at
-          %a{ :href => "mailto:jordan@wolffrocks.com" }
-            jordan@wolffrocks.com
-          \.
+          %a{ :href => "mailto:jordan@wolffrocks.com" } jordan@wolffrocks.com
         %h3
           %span.alt
             Links
         %p
           Jordan on
-          %a{ :href => "http://myspace.com/getyourhandsup" }
-            myspace
-        %p{ :style => "text-indent:0;" }
-          Jordan on Facebook
-    #footer.span-24
-      © 2009
-      %a{ :href => "http://sethbc.org" }
-        Seth Chandler
-      \.
+          %a{ :href => "http://myspace.com/getyourhandsup" } myspace
+        %p{ :style => "text-indent:0;" } Jordan on Facebook
+    %hr.space
+    #footer.span-24.center
+      %p{ :style => "text-align:center;" }
+        © 2009
+        %a{ :href => "http://sethbc.org" } Seth Chandler
+        \and Jordan Wolff.
