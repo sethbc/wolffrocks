@@ -1,0 +1,79 @@
+body
+  :text-align center
+
+
+.container
+  :text-align left
+
+  ul
+    :list-style disc outside
+    :margin-left 2em
+
+    li
+      :text-indent 0
+      :margin-left 0
+
+  legend
+    :margin-bottom 1.6em
+
+  blockquote
+    p, table
+      :margin-top .8em
+      :margin-bottom .8em
+
+  input
+    &[type='submit'], &[type='button']
+      :padding 0
+
+  legend+*
+    :margin-top 0
+
+
+* html
+  .column
+    :overflow-x hidden
+
+  legend
+    :margin -18px -8px 16px 0
+    :padding 0
+
+  .container
+    textarea, input
+      :padding 0
+
+
+ol
+  :margin-left 2em
+
+
+sup
+  :vertical-align text-top
+  :font-size 100%
+
+
+sub
+  :vertical-align text-bottom
+  :font-size 100%
+
+
+html>body p code
+  :*white-space normal
+
+
+hr
+  :margin -8px auto 11px
+
+
+#content blockquote
+  ul, ol, dl, pre, address, form, h1, h2, h3, h4, h5, h6
+    :margin-top .8em
+    :margin-bottom .8em
+
+
+a
+  abbr, acronym
+    :text-decoration underline
+
+
+fieldset legend
+  :margin 0
