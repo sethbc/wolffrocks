@@ -102,7 +102,7 @@ input[type='text'],input[type='password'] { cursor: text; }
 .container a:link { text-decoration: underline; color: #36c; }
 .container a:visited { text-decoration: underline; color: #99c; }
 .container a:hover { text-decoration: underline; color: #c33; }
-.container a:active, .container a:focus { text-decoration: underline; color: #000; }
+.container a:active, .container a:focus { text-decoration: underline; color: #fff; }
 .container code, .container pre { color: #c33; } /* very optional, but still useful. W3C uses about the same colors for codes */
 
 /* 24 COLUMN GRID */
