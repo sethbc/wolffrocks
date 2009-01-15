@@ -16,3 +16,7 @@ end
 get '/photos' do
   haml :photos
 end
+
+get '/downloads' do
+  haml :downloads
+end

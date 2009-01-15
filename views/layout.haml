@@ -9,39 +9,48 @@
     %link{ :href => "stylesheets/style.css", :rel => "stylesheet", :media => "screen, projection", :type => "text/css" }
     %title
       wolffrocks.com | Jordan Wolff
+    %script{ :type=>"text/javascript" }
+      var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
+      document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
+    %script{ :type=>"text/javascript" }
+      try {
+      var pageTracker = _gat._getTracker("UA-118815-7");
+      pageTracker._trackPageview();
+      } catch(err) {}
   %body
     .container
       #header.span-24
         .span-14
-          %img{ :src => "images/wolffrocks.png" }
+          %img{ :src => "images/wolffrocks.png", :alt => "Wolff Rocks" }
         .span-10.last
-          %h2.fancy.bottom{ :style => "text-align:right;" }
-            Jordan Wolff's new album: (Title)
+          %h1.fancy.bottom{ :style => "text-align:right;" }
+            Jordan Wolff's new album:
+          %h1.fancy.bottom{ :style => "text-align:right;" }
+            Things You Never Had 
         %hr
-      .span-3.colborder
+      #leftSideBar.span-3.colborder
         %h3{ :style=> "text-align:right;" }
           %span.fancy
             Navigation
-        %p
-          %h6{ :style=> "text-align:right;" }
-            %a{ :href => "/" }
-              Home
-            %br
-            %a{ :href => "/bio" }
-              Jordan's Bio
-            %br
-            %a{ :href => "/photos" }
-              Photos
-            %br
-            %a{ :href => "/downloads" }
-              Downloads
+        %h6{ :style=> "text-align:right;" }
+          %a{ :href => "/" }
+            Home
+          %br
+          %a{ :href => "/bio" }
+            Jordan's Bio
+          %br
+          %a{ :href => "/photos" }
+            Photos
+          %br
+          %a{ :href => "/downloads" }
+            Downloads
       .span-13.colborder
         = yield
-      .span-6.last
+      #rightSideBar.span-6.last
         %h3
           %span.fancy
             About
-        %img{ :src => "images/jordan-sidebar.jpg" }
+        %img{ :src => "images/jordan-sidebar.jpg", :alt => "Jordan in black and white." }
         %p
           Jordan is a world traveler, musician and lawyer.
         %h3
